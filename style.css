@@ -1,0 +1,83 @@
+body {
+    background: #0055C4;
+}
+
+#titlebar {
+    text-align: center;
+    padding: 1em;
+    color: #0A2463;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 999;
+}
+
+#spacer {
+    height: 9em;
+}
+
+div.console {
+    background: #F2FAFF;
+}
+
+div.console > h3 {
+    padding: 0.5em;
+    padding-bottom: 0;    
+    padding-top: 0.25em;
+}
+
+div.console-inside {
+    padding: 1em;
+    background: #1C1C1C;
+    color: #64CC24;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.btn {
+    background: rgb(21, 65, 167);
+    color: #F2FAFF;
+}
+
+.btn:hover {
+    background:  rgb(33, 85, 206);
+}
+
+.btn:active {
+    background: #0A2463;
+}
+
+#TileBoard {
+    margin-top: 2em;
+}
+
+.project-tile {    
+    background: #1C1C1C;
+    margin: 5pt;
+    border: 5px solid #1C1C1C;
+    display: none;
+}
+
+.tile-text {
+    color: #64CC24;
+    padding: 5pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    border-color: #64CC24;
+}
+
+.console-inside pre{
+    color: inherit;
+    font-family: inherit;
+    font: inherit;
+    
+}
