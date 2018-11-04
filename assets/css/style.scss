@@ -1,3 +1,6 @@
+---
+---
+
 @import "{{ site.theme }}";
 
 #titlebar > a {
@@ -10,4 +13,7 @@
     text-shadow: none;
     margin: none;
     font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+    letter-spacing: default;
+    margin: default;    
 }
