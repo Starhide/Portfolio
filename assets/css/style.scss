@@ -1,1 +1,17 @@
 @import "{{ site.theme }}";
+
+body {
+    background: #0055C4;
+}
+
+#titlebar {
+    text-align: center;
+    padding: 1em;
+    color: #0A2463;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: 999;
+}
