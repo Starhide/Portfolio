@@ -12,6 +12,7 @@ body {
     left: 0;
     background: white;
     z-index: 999;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #spacer {
