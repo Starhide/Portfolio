@@ -23,6 +23,7 @@
 
 .console > h3 {
     font-weight: 500;
+    color: #0A2463;
     letter-spacing: normal;
     text-shadow: none;
     margin-block-start: 1em;
@@ -33,6 +34,10 @@
     font-family:  Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
 }
 
-div.console-inside {
+div.console-inside h1, div.console-inside h2, div.console-inside h3, div.console-inside h4, div.console-inside h5, div.console-inside h6{
     color: white;
+}
+
+div.console-inside ul li {
+    list-style-image: none;
 }
