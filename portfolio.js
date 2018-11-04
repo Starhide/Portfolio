@@ -1,4 +1,6 @@
 var template = "<div class=\"col-md-4\"><div class=\"project-tile\"><img src=\"\" alt=\"\" class=\"project-image\"><div class=\"tile-text\"><h2></h2><p></p></div></div></div>";
+var projectLoadSpeed = 3000;
+
 
 function printSlowText(element, speed, txt, pos, finish) {
     if (pos < txt.length) {
@@ -17,6 +19,8 @@ function textProgressBar(e, speed, length, i, max, prev) {
         $(e)[0].innerHTML = prev + "<pre>[" + "=".repeat(Math.floor((i / max) * length)) + " ".repeat(length - Math.floor((i / max) * length)) + "] " + i + "/" + max + "</pre>";
         i++;
         setTimeout(textProgressBar, speed, e, speed, length, i, max, prev);
+    }else {
+        $(e)[0].innerHTML += " > ";
     }
 }
 
@@ -25,7 +29,7 @@ function displayProjects() {
     printSlowText("#Projects .console-inside", 25, "> print(links.Projects.description)", 0, function (e) {
         $(e)[0].innerHTML += "<br />A collection of everything I've worked on. School projects, experiments, applications, etc. Some are finished, many are work-in-progress, and a few are abandoned.<br />";
         setTimeout(printSlowText, 500, "#Projects .console-inside", 25, "> displayProjects();", 0, function (e) {
-            textProgressBar(e, 4000 / projects.length, 20, 0, projects.length, $(e)[0].innerHTML);
+            textProgressBar(e, projectLoadSpeed / projects.length, 20, 0, projects.length, $(e)[0].innerHTML);
             var i = 0;
             for (const project of projects) {
                 var element =
@@ -35,14 +39,19 @@ function displayProjects() {
                      <p>${project.description}</p>
                      Tags: ${project.tags}</div></div></div>`;
                 $("#TileBoard > .row").append(element);
-                $($("#TileBoard .project-tile")[i]).delay(4000 / projects.length * (i+1)).fadeIn(1000);
+                $($("#TileBoard .project-tile")[i]).delay(projectLoadSpeed / projects.length * (i+1)).fadeIn(1000);
                 i = i + 1;
             }
         });
     });
+}
 
-
-
+function unloadProjects(){
+    $("#TileBoard .project-tile").fadeOut();
+    
+    setTimeout(function(){
+        $("#TileBoard > .row").empty();
+    }, 1000);
 }
 
 displayProjects();
