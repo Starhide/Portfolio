@@ -35,7 +35,7 @@ function displayProjects() {
                 var element =
                     `<div class=\"col-md-4\"><div class=\"project-tile\"><img src=\"${project.image}\" alt=\"\" class=\"project-image\">
                      <div class=\"tile-text\">
-                     <h2>${project.title}</h2>
+                     <h2><a href="${project.link}">${project.title}</a></h2>
                      <p>${project.description}</p>
                      Tags: ${project.tags}</div></div></div>`;
                 $("#TileBoard > .row").append(element);
@@ -46,12 +46,27 @@ function displayProjects() {
     });
 }
 
-function unloadProjects(){
+function showProjects(){
+    $("#Projects .console-inside")[0].innerHTML = "";
+    $("#Projects").delay(1000).slideDown();
+    setTimeout(displayProjects, 1000);
+}
+
+function hideProjects(){
     $("#TileBoard .project-tile").fadeOut();
     
     setTimeout(function(){
         $("#TileBoard > .row").empty();
     }, 1000);
+
+    $("#Projects").delay(700).slideUp();
 }
 
-displayProjects();
+function showAbout(){
+    $("#About").delay(1400).slideDown();
+}
+
+function hideAbout(){
+    $("#About").slideUp();
+}
+

@@ -13,11 +13,12 @@
 <body>
     <div id="titlebar">
         <h1>Blake Bauer</h1>
-        links = [<a href="#" onclick="unloadProjects(); return true;">AboutMe</a>, <a href="test">Projects</a>, <a href="">Resume</a>]
+        links = [<a href="#" onclick="hideProjects(); showAbout(); return true;">AboutMe</a>, <a href="#" onclick="hideAbout(); showProjects(); return true;">Projects</a>,
+        <a href="">Resume</a>]
     </div>
     <div id="spacer"></div>
     <div id="content" class="container">
-        <div id="About" style="display:none;">
+        <div id="About">
             <div class="console">
                 <h3>About Me</h3>
                 <div class="console-inside">
@@ -47,30 +48,28 @@
             </div>
         </div>
 
-        <div id="Projects">
+        <div id="Projects" style="display: none;">
             <div class="console">
                 <h3>Projects</h3>
                 <div class="console-inside">
-                    
-                </div>                
+
+                </div>
             </div>
             <div id="TileBoard">
                 <div class="row">
-                    
+
                 </div>
             </div>
         </div>
-        <div id="Resume">
+        <div id="Resume" style="display: none;">
 
         </div>
     </div>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script  src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
-            <script src="projects.js"></script>
-            <script src="portfolio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="projects.js"></script>
+    <script src="portfolio.js"></script>
 </body>
-
 </html>
