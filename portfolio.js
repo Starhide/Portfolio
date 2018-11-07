@@ -70,3 +70,16 @@ function hideAbout(){
     $("#About").slideUp();
 }
 
+$(document).ready(function(){
+    if(window.location.hash) {
+        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+        if(hash.toLowerCase() == "about"){
+            $("#About").show();
+        } else if(hash.toLowerCase() == "projects") {
+            $("#Projects").show();
+            displayProjects();
+        }
+    } else {
+        $("#About").show();
+    }
+});
