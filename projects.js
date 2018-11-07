@@ -15,7 +15,7 @@ projects = [
     {
         title: "Maze",
         description: "A java application that generates a maze using a user-selected algorithm. CS162 Final Project.",
-        link: "projects/Maze/maze.md",
+        link: "projects/Maze/maze",
         tags: [
             "Java",
             "GUI",

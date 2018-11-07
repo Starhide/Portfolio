@@ -72,7 +72,7 @@ function hideAbout(){
 
 $(document).ready(function(){
     if(window.location.hash) {
-        var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
+        var hash = window.location.hash.substring(1);
         if(hash.toLowerCase() == "about"){
             $("#About").show();
         } else if(hash.toLowerCase() == "projects") {
