@@ -22,19 +22,22 @@ projects = [
             "Algorithm",
             "Maze"
         ],
-        image: "maze.png",
+        image: "projects/Maze/maze.png",
         date: ""
     },
     {
         title: "CS460",
         description: "A set of assignments for CS460 using ASP.net MVC.",
-        link: "",
+        link: "projects/CS460/cs460",
         tags: [
             "C#",
+            "JS",
+            "HTML/CSS",
             "Web",
-            "ASP.net"
+            "ASP.net",
+            "SQL"
         ],
-        image: "Untitled.png",
+        image: "projects/CS460/cs460.png",
         date: ""
     },
     {
@@ -76,12 +79,12 @@ projects = [
     {
         title: "Game of Life",
         description: "Conway's Game of Life using java and lwjgl.",
-        link: "",
+        link: "projects/GameOfLife/",
         tags: [
             "Java",
             "LWJGL"
         ],
-        image: "gameoflife.png",
+        image: "projects/GameOfLife/gameoflife.png",
         date: ""
     },
     {
