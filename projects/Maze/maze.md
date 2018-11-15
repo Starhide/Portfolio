@@ -3,6 +3,8 @@ title: Maze Generator
 layout: default
 ---
 
+[GitHub](https://github.com/Starhide/JavaProjects/tree/master/Maze)
+
 Made for the final project in CS162 this application generates a maze using one of four algorithms that can be selected by the user. Once a maze has been generated it can be exported to either a png or as plaintext. The application has an option for real time rendering, height and width of the maze, and the seed used by the random number generator.
 
 This assignment was open-ended but had several requirements:

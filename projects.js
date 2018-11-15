@@ -2,7 +2,7 @@ projects = [
     {
         title: "3D Equation Ray Tracer",
         description: "A program that draws any 3D equation real time.",
-        link: "",
+        link: "projects/RayTracer/",
         tags: [
             "C#",
             "CUDA",
@@ -43,7 +43,7 @@ projects = [
     {
         title: "Calcutron",
         description: "A calculator designed for computer scientists on android. Made for my individual senior project.",
-        link: "",
+        link: "/projects/Calcutron/",
         tags: [
             "Java",
             "Android"
@@ -54,7 +54,7 @@ projects = [
     {
         title: "Elimination Framework",
         description: "A website made in a four-person team as part of senior project.",
-        link: "",
+        link: "/projects/Elimination/",
         tags: [
             "C#",
             "ASP.net",
@@ -68,7 +68,7 @@ projects = [
     {
         title: "Sorts",
         description: "An application that visualizes a sorting algorithm.",
-        link: "",
+        link: "projects/Sorts/",
         tags: [
             "Java",
             "Android"
@@ -85,17 +85,6 @@ projects = [
             "LWJGL"
         ],
         image: "projects/GameOfLife/gameoflife.png",
-        date: ""
-    },
-    {
-        title: "Art",
-        description: "A gallery of images I've generated. ",
-        link: "",
-        tags: [
-            "Images",
-            "Algorithm"
-        ],
-        image: "Untitled.png",
         date: ""
     }
 ]
