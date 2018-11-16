@@ -67,13 +67,14 @@ projects = [
     },
     {
         title: "Sorts",
-        description: "An application that visualizes a sorting algorithm.",
+        description: "An application that visualizes sorting algorithms.",
         link: "projects/Sorts/",
         tags: [
             "Java",
-            "Android"
+            "Swing",
+            "Algorithms"
         ],
-        image: "Untitled.png",
+        image: "projects/Sorts/sort.png",
         date: ""
     },
     {
