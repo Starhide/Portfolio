@@ -3,7 +3,7 @@ title: 3D Equation Renderer
 layout: default
 ---
 
-[GitHub Repo]()
+[GitHub Repo](https://github.com/Starhide/EquationRayCaster)
 
 The general goal of this project was to be able to render any 3D equation real-time in a pixel perfect manner. 
 

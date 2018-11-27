@@ -1,17 +1,5 @@
 projects = [    
-    {
-        title: "3D Equation Ray Tracer",
-        description: "A program that draws any 3D equation real time.",
-        link: "projects/RayTracer/",
-        tags: [
-            "C#",
-            "CUDA",
-            "Algorithm",
-            "WIP"
-        ],
-        image: "Untitled.png",
-        date: ""
-    },
+    
     {
         title: "Maze",
         description: "A java application that generates a maze using a user-selected algorithm. CS162 Final Project.",
@@ -23,6 +11,18 @@ projects = [
             "Maze"
         ],
         image: "projects/Maze/maze.png",
+        date: ""
+    },
+    {
+        title: "Sorts",
+        description: "An application that visualizes sorting algorithms.",
+        link: "projects/Sorts/",
+        tags: [
+            "Java",
+            "Swing",
+            "Algorithms"
+        ],
+        image: "projects/Sorts/sort.png",
         date: ""
     },
     {
@@ -66,18 +66,6 @@ projects = [
         date: ""
     },
     {
-        title: "Sorts",
-        description: "An application that visualizes sorting algorithms.",
-        link: "projects/Sorts/",
-        tags: [
-            "Java",
-            "Swing",
-            "Algorithms"
-        ],
-        image: "projects/Sorts/sort.png",
-        date: ""
-    },
-    {
         title: "Game of Life",
         description: "Conway's Game of Life using java and lwjgl.",
         link: "projects/GameOfLife/",
@@ -86,6 +74,19 @@ projects = [
             "LWJGL"
         ],
         image: "projects/GameOfLife/gameoflife.png",
+        date: ""
+    },
+    {
+        title: "3D Equation Renderer",
+        description: "A program that draws any 3D equation real time.",
+        link: "projects/RayTracer/",
+        tags: [
+            "C#",
+            "CUDA",
+            "Algorithm",
+            "WIP"
+        ],
+        image: "projects/RayTracer/torus.png",
         date: ""
     }
 ]
