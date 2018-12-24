@@ -66,15 +66,4 @@ function hideAbout() {
 
 $(document).ready(function () {
     displayProjects()
-    if (window.location.hash) {
-        var hash = window.location.hash.substring(1);
-        if (hash.toLowerCase() == "about") {
-            $("#About").show();
-        } else if (hash.toLowerCase() == "projects") {
-            $("#Projects").show();
-            displayProjects();
-        }
-    } else {
-        $("#About").show();
-    }
 });
