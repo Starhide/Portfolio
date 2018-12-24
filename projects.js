@@ -41,31 +41,6 @@ projects = [
         date: ""
     },
     {
-        title: "Calcutron",
-        description: "A calculator designed for computer scientists on android. Made for my individual senior project.",
-        link: "/projects/Calcutron/",
-        tags: [
-            "Java",
-            "Android"
-        ],
-        image: "Untitled.png",
-        date: ""
-    },
-    {
-        title: "Elimination Framework",
-        description: "A website made in a four-person team as part of senior project.",
-        link: "/projects/Elimination/",
-        tags: [
-            "C#",
-            "ASP.net",
-            "Azure",
-            "Scrum",
-            "SQL"
-        ],
-        image: "Untitled.png",
-        date: ""
-    },
-    {
         title: "Game of Life",
         description: "Conway's Game of Life using java and lwjgl.",
         link: "projects/GameOfLife/",
@@ -87,6 +62,31 @@ projects = [
             "WIP"
         ],
         image: "projects/RayTracer/torus.png",
+        date: ""
+    },
+    {
+        title: "Calcutron",
+        description: "A calculator designed for computer scientists on android. Made for my individual senior project.",
+        link: "https://bitbucket.org/blakebauer/cscalculator/src/master/",
+        tags: [
+            "Java",
+            "Android"
+        ],
+        image: "Untitled.png",
+        date: ""
+    },
+    {
+        title: "Elimination Framework",
+        description: "A website made in a four-person team as part of senior project.",
+        link: "https://bitbucket.org/blakebauer/SneakySoftware",
+        tags: [
+            "C#",
+            "ASP.net",
+            "Azure",
+            "Scrum",
+            "SQL"
+        ],
+        image: "Untitled.png",
         date: ""
     }
 ]
