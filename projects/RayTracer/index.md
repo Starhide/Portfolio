@@ -47,7 +47,7 @@ Unfortunately, almost any equation with a trig function has tearing issues or de
 
 ![sine](sine.png)
 
-Another thing, currently the way the img is being drawn it is being transferred back and forth from the gpu to the ram which is slowing it down substantially which is why the resolution is small. 
+Another thing, currently the way the image is being drawn it is being transferred back and forth from the gpu to the ram which is slowing it down substantially which is why the resolution is small. 
 
 After much attempts to get the CUDA library for C# (Alea, ILGPU) to work with DirectX or OpenGL without success I've established this project needs to be ported to C++ in order to increase performance anymore. I will revisit this later when I have the time. 
 
