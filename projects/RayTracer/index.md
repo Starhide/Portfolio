@@ -51,4 +51,4 @@ Another thing, currently the way the img is being drawn it is being transferred 
 
 After much attempts to get the CUDA library for C# (Alea, ILGPU) to work with DirectX or OpenGL without success I've established this project needs to be ported to C++ in order to increase performance anymore. I will revisit this later when I have the time. 
 
-I might even attempt to use algebra to check for intersections in order to solve the sine wave problems.
+I might even attempt to use an algebraic intersection for precise points in order to solve the sine wave problems.
