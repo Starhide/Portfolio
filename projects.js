@@ -65,17 +65,6 @@ projects = [
         date: ""
     },
     {
-        title: "Calcutron",
-        description: "A calculator designed for computer scientists on android. Made for my individual senior project.",
-        link: "https://bitbucket.org/blakebauer/cscalculator/src/master/",
-        tags: [
-            "Java",
-            "Android"
-        ],
-        image: "Untitled.png",
-        date: ""
-    },
-    {
         title: "Elimination Framework",
         description: "A website made in a four-person team as part of senior project.",
         link: "https://bitbucket.org/blakebauer/SneakySoftware",
