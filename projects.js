@@ -65,6 +65,19 @@ projects = [
         date: ""
     },
     {
+        title: "Cube World",
+        description: "A small project to create a CubeWorld like Minecraft",
+        link: "projects/CubeWorld/",
+        tags: [
+            "C#",
+            "OpenGL",
+            "Game",
+            "WIP"
+        ],
+        image: "projects/CubeWorld/FrontCube.png",
+        date: ""
+    },
+    {
         title: "Elimination Framework",
         description: "A website made in a four-person team as part of senior project.",
         link: "https://bitbucket.org/blakebauer/SneakySoftware",
