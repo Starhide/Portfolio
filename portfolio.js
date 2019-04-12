@@ -40,30 +40,50 @@ function displayProjects() {
     }
 }
 
+areProjectsDisplayed = false;
+
+function toggleProjects(){
+    if(areProjectsDisplayed){
+        areProjectsDisplayed = false;
+        hideProjects();
+    } else {        
+        areProjectsDisplayed = true;
+        showProjects();
+    }
+}
+
+function loadProjects(){
+    for (const project of projects) {
+        var element =
+            `<div class=\"col-md-4\"><div class=\"project-tile\"><img src=\"${project.image}\" alt=\"\" class=\"project-image\">
+                     <div class=\"tile-text\">
+                     <h2><a href="${project.link}">${project.title}</a></h2>
+                     <p>${project.description}</p>
+                     Tags: ${project.tags}</div></div></div>`;
+                     
+        $("#TileBoard > .row").append(element);
+    }
+}
+
 function showProjects() {
-    $("#Projects .console-inside")[0].innerHTML = "";
-    $("#Projects").delay(1000).slideDown();
-    setTimeout(displayProjects, 1000);
+    $("#TileBoard .project-tile").fadeIn();
 }
 
 function hideProjects() {
     $("#TileBoard .project-tile").fadeOut();
-
-    setTimeout(function () {
-        $("#TileBoard > .row").empty();
-    }, 1000);
-
-    $("#Projects").delay(700).slideUp();
 }
 
-function showAbout() {
-    $("#About").delay(1400).slideDown();
-}
-
-function hideAbout() {
-    $("#About").slideUp();
+function consoleSlide(selector){
+    arrow = $(selector + " i")[0];
+    if(arrow.className.includes("left")){
+        arrow.className = "arrow down";
+    }
+    else{
+        arrow.className = "arrow left";
+    }
+    $(selector + " div.console-inside").slideToggle();
 }
 
 $(document).ready(function () {
-    displayProjects()
+    loadProjects()
 });

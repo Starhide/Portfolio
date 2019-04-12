@@ -16,10 +16,17 @@
     </div>
     <div id="spacer"></div>
     <div id="spacer"></div>
+    <div id="spacer"></div>
+    <div id="spacer"></div>
     <div id="content" class="container">
         <div id="About">
-            <div class="console">
-                <h3>About Me</h3>
+            <div class="console">                
+                <div class="console-title-bar">
+                    <h3>About Me</h3>
+                    <div class="console-slide-btn" onclick="consoleSlide('#About');">                        
+                        <i class="arrow left"></i>
+                    </div>
+                </div>
                 <div class="console-inside">
                     > With a B.S. in Computer Science and Mathematics. I enjoy solving complicated problems, integrating math and computer science, and experimenting with all sorts of things.
                     I have many hobbies from Hiking to Gaming but above all I love learning so much so I completed a rather difficult 4 year degree in 3 years.
@@ -28,8 +35,13 @@
             </div>
         </div>
         <div id="spacer"></div>
-        <div class="console">
-            <h3>Skills and Knowledge</h3>
+        <div id="Skills" class="console">
+            <div class="console-title-bar">
+                <h3>Skills and Knowledge</h3>
+                <div class="console-slide-btn" onclick="consoleSlide('#Skills');">                        
+                    <i class="arrow left"></i>
+                </div>
+            </div>
             <div class="console-inside">
                 > Languages = [<br /> 
                     &nbsp;&nbsp;&nbsp;&nbsp;C#, Java, Lua, Python, SQL, HTML, CSS, JavaScript, C++, C, Haskell, POV-Ray, CUDA<br /> 
@@ -43,8 +55,13 @@
             </div>
         </div>
         <div id="spacer"></div>
-        <div class="console">
-            <h3>Education</h3>
+        <div id="Education" class="console">
+            <div class="console-title-bar">
+                <h3>Education</h3>
+                <div class="console-slide-btn" onclick="consoleSlide('#Education');">                        
+                    <i class="arrow left"></i>
+                </div>
+            </div>
             <div class="console-inside">
                 > B.S. Computer Science and Mathematics, Western Oregon University from September 2015 - Jun 2018<br /> 
                 &nbsp;&nbsp;&nbsp;&nbsp;Major GPA: 4.00&nbsp;&nbsp;&nbsp;&nbsp;Overall GPA: 3.91<br /> 
@@ -53,8 +70,13 @@
             </div>
         </div>
         <div id="spacer"></div>
-        <div class="console">
-            <h3>Awards</h3>
+        <div id="Awards" class="console">
+            <div class="console-title-bar">
+                <h3>Awards</h3>
+                <div class="console-slide-btn" onclick="consoleSlide('#Awards');">                        
+                    <i class="arrow left"></i>
+                </div>
+            </div>
             <div class="console-inside">
                 > Western Oregon University = [<br /> 
                 &nbsp;&nbsp;&nbsp;&nbsp;Outstanding Graduate in Computer Science and Mathematics   (MAY 2018),<br /> 
@@ -69,7 +91,12 @@
         <div id="spacer"></div>
         <div id="Projects">
             <div class="console">
-                <h3>Projects</h3>
+                <div class="console-title-bar">
+                    <h3>Projects</h3>
+                    <div class="console-slide-btn" onclick="consoleSlide('#Projects'); toggleProjects();">                        
+                        <i class="arrow left"></i>
+                    </div>
+                </div>
                 <div class="console-inside">
                     > A collection of some stuff I've worked on. School projects, hobby, experiments, applications, etc. Some are finished, many are work-in-progress, and a few are abandoned.
                 </div>

@@ -16,7 +16,7 @@ body {
 }
 
 #spacer {
-    height: 4em;
+    height: 2em;
 }
 
 div.console {
@@ -32,10 +32,29 @@ div.console > h3 {
 }
 
 div.console-inside {
+    display: none;
     padding: 1em;
     background: #1C1C1C;
     color: #64CC24;
     font-family: "Courier New", Courier, monospace;
+}
+
+div.console-title-bar {
+    width: 100%;
+    padding: 1.0em;
+    padding-bottom: 0;    
+    padding-top: 0.5em;
+    color: #0A2463;
+}
+
+div.console-title-bar > h3 {
+    display: inline-block;
+}
+
+div.console-slide-btn {
+    float: right;
+    cursor: pointer;
+    padding: 0.25em;
 }
 
 .btn {
@@ -90,3 +109,20 @@ hr {
     color: rgb(30, 121, 241);
 
 }
+
+i {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 0.25em;
+  }
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+  }
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
