@@ -7,9 +7,9 @@ I started this project to give me something to do for a few weeks and to learn O
 
 I wanted to make a world that would behave in one possible way an actual flat world would behave. Given, the it is a world of cubes I figured the world should be in a rectangular shape as well. So, in its current state the program creates and renders a world of cubes with a set size where the bounds on all 3 axes loop.
 
-There were many challenges to be able to get this world to have any sort of efficiency. The first time I ran it, it ran at about 10 fps with only 1 chunk generated. So, one after another I added performance boosts and eventually reached a nice staple 60+ fps with _____ chunks loaded. Looking at CPU and GPU usages it is running just slightly less efficient than Minecraft.
+There were many challenges to be able to get this world to have any sort of efficiency. The first time I ran it, it ran at about 10 fps with only 1 chunk generated. So, one after another I added performance boosts and eventually reached a nice staple 60+ fps with 20000 chunks loaded. Looking at CPU and GPU usages it is running just slightly less efficient than Minecraft.
 
-Some of the commonly-known performance boosts that I implemented include: Frustum Culling, Object Pools, Multi-threading, Dirty Flags, and OpenGL Instancing. There were also tons of other performance boosts like culling faces between blocks.
+Some of the commonly-known performance boosts that I implemented include: Frustum Culling, Object Pools, Multi-threading, Dirty Flags, and OpenGL Instancing. There were also tons of other performance boosts like culling faces between blocks. There are also a few more ones I can add that reduce memory used and ignore some chunks which will help a lot with the speed at which the world loads.
 
 This program is written in C# with OpenTK which I admit was a mistake because OpenTK had some memory leaks that took a while to fix (well work around) and some of OpenTK isn't concurrent friendly which again took some time to work around.
 

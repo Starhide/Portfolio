@@ -88,7 +88,7 @@ projects = [
             "Scrum",
             "SQL"
         ],
-        image: "Untitled.png",
+        image: "projects/Elimination/Elimination.png",
         date: ""
     }
 ]
